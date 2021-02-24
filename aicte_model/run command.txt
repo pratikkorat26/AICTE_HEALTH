@@ -1,0 +1,17 @@
+navigate to "aicte_model\aicte\api" 
+				==> main.py
+				==> rogs.py
+
+**********************************************
+*                                            *
+*	uvicorn main:app --reload            *
+*                                            *
+**********************************************
+
+
+********************* CURL URL ******************** EXAMPLE ************************
+curl -X POST
+	"http://127.0.0.1:8000/predict"
+	-H  "accept: application/json" 
+	-H  "Content-Type: application/json" 
+	-d "{\"age\":65,\"cp\":1,\"trestbps\":2,\"chol\":120,\"restecg\":45,\"thalach\":0,\"oldpeak\":0,\"slope\":0,\"ca\":0,\"thal\":0}"
